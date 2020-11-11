@@ -193,6 +193,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#usingTransportation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#usingTransportation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -285,10 +295,40 @@
     
 
 
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Airport -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Airport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#usingTransportation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Airplane"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Boat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Boat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation"/>
     </owl:Class>
     
 
@@ -297,6 +337,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#BusStop">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#usingTransportation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Bus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -438,6 +484,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Port">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#usingTransportation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Boat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -536,6 +588,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#usingTransportation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearHotel"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
             </owl:Restriction>
@@ -630,11 +688,31 @@
     
 
 
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#usingTransportation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Train"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation"/>
     
 
 
@@ -1061,6 +1139,23 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CityBasedActivity"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CultureBasedActivity"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#NatureBasedActivity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Boat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Train"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
