@@ -118,6 +118,52 @@
     
 
 
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToHotel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToHotel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToRestaurant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToRestaurant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToStation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToStation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToTouristDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToTouristDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isInDistrict -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isInDistrict">
@@ -150,44 +196,140 @@
     
 
 
-    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearHotel -->
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearHotel -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearHotel">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearHotel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearRestaurant -->
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearRestaurant -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearRestaurant">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearRestaurant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearStation -->
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearStation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearStation">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTo"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearStation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTo -->
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTo"/>
     
 
 
-    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTouristDestination -->
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTouristDestination -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTouristDestination">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTouristDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearHotel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearHotel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearRestaurant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearRestaurant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearStation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearStation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTouristDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTouristDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearToHotel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearToHotel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearToRestaurant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearToRestaurant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearToStation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearToStation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearToTouristDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearToTouristDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTouristDestinationNearTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
     </owl:ObjectProperty>
     
@@ -446,13 +588,25 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearStation"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToHotel"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToRestaurant"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToStation"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTouristDestination"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isHotelNearToTouristDestination"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -538,13 +692,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearStation"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearStation"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTouristDestination"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isRestaurantNearTouristDestination"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -564,6 +718,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#closeTime"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isOpen24Hours"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -588,32 +748,38 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearRestaurant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTouristDestination"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#usingTransportation"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Transportation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearHotel"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isInDistrict"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#District"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearHotel"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearRestaurant"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearStation"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearStation"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTouristDestination"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -638,25 +804,25 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearHotel"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearHotel"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearRestaurant"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearRestaurant"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearStation"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearStation"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isNearTouristDestination"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isStationNearTouristDestination"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -732,8 +898,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AsakusaStation">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TaitoCity"/>
-        <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#NitemmonBusStop"/>
-        <isNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#SensojiTemple"/>
+        <isStationNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#NitemmonBusStop"/>
+        <isStationNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#SensojiTemple"/>
         <rdfs:label>AsakusaStation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -807,8 +973,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ChouoCity"/>
-        <isNearRestaurant rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Maruushimeat"/>
-        <isNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HiroshimaBrandShop"/>
+        <isStationNearRestaurant rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Maruushimeat"/>
+        <isStationNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HiroshimaBrandShop"/>
         <rdfs:label>GinzaItchomeStation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -847,8 +1013,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationTouristDestination"/>
         <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ShoppingActivity"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ChouoCity"/>
-        <isNearHotel rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HotelMontereyGinza"/>
-        <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation"/>
+        <isTouristDestinationNearToHotel rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HotelMontereyGinza"/>
+        <isTouristDestinationNearToStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation"/>
         <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1900</closeTime>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.1</hasRating>
         <isOpen24Hours rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen24Hours>
@@ -861,9 +1027,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HotelMontereyGinza">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
+        <isHotelNearToStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation"/>
+        <isHotelNearToTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HiroshimaBrandShop"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ChouoCity"/>
-        <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation"/>
-        <isNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HiroshimaBrandShop"/>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasRating>
     </owl:NamedIndividual>
     
@@ -883,8 +1049,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Maruushimeat">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
-        <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation"/>
-        <isNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HiroshimaBrandShop"/>
+        <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ChouoCity"/>
+        <isRestaurantNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation"/>
+        <isRestaurantNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HiroshimaBrandShop"/>
         <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2330</closeTime>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</hasRating>
         <isOpen24Hours rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen24Hours>
@@ -918,8 +1085,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#NitemmonBusStop">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#BusStop"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TaitoCity"/>
-        <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AsakusaStation"/>
-        <isNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#SensojiTemple"/>
+        <isStationNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AsakusaStation"/>
+        <isStationNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#SensojiTemple"/>
     </owl:NamedIndividual>
     
 
@@ -951,7 +1118,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationTouristDestination"/>
         <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CityViewActivity"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#MinatoKu"/>
-        <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RoppongiStation"/>
+        <isTouristDestinationNearToStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RoppongiStation"/>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</hasRating>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RoppongiHills</rdfs:label>
     </owl:NamedIndividual>
@@ -963,7 +1130,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RoppongiStation">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#MinatoKu"/>
-        <isNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RoppongiHills"/>
+        <isStationNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RoppongiHills"/>
         <rdfs:label>RoppongiStation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -975,7 +1142,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationTouristDestination"/>
         <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ShoppingActivity"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ToshimaCity"/>
-        <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#IkebukuroStation"/>
+        <isStationNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#IkebukuroStation"/>
         <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2100</closeTime>
         <openTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</openTime>
         <rdfs:label>SeibuShoppingMall</rdfs:label>
@@ -987,7 +1154,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#SensojiTemple">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HistoricalTouristDestination"/>
-        <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AsakusaStation"/>
+        <isStationNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AsakusaStation"/>
         <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</closeTime>
         <openTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</openTime>
         <rdfs:label xml:lang="th">วัดเซ็นโซจิ</rdfs:label>
@@ -1163,13 +1330,18 @@
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Airport"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#BusStop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Port"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#BusinessTouristDestination"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CulturalTouristDestination"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#EnvironmentalTouristDestination"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HistoricalTouristDestination"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Port"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationTouristDestination"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
