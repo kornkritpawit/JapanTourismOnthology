@@ -1172,18 +1172,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         </owl:members>
     </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#District"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Province"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationTouristDestination"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
