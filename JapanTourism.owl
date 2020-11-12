@@ -1178,6 +1178,7 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#District"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Province"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationTouristDestination"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Station"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
