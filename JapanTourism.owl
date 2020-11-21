@@ -424,24 +424,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#District">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Place"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#hasHotel"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Hotel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#hasRestaurant"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#hasTouristDestination"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TouristDestination"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -611,16 +593,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationActivity"/>
         <RecommendAtLeastAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</RecommendAtLeastAge>
         <rdfs:label>DriveActivity</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GardenWalkingActivity -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GardenWalkingActivity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationActivity"/>
-        <rdfs:label>GardenWalkingActivity</rdfs:label>
-        <rdfs:label xml:lang="th">เดินเล่นในสาน</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -987,49 +959,6 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#hasActivity"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AdventureActivity"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#hasAdventureActivity"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#hasTouristDestination"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
@@ -1347,6 +1276,49 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#District"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#hasActivity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AdventureActivity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#hasAdventureActivity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
