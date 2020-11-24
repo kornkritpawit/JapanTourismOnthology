@@ -763,6 +763,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#MatsuyaGinza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#MatsuyaGinza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationTouristDestination"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ShoppingActivity"/>
+        <isNearTo rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaStation"/>
+        <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</closeTime>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.9</hasRating>
+        <isOpen24Hours rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen24Hours>
+        <openTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</openTime>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#MinatoKu -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#MinatoKu">
