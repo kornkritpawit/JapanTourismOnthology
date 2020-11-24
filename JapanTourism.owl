@@ -985,6 +985,7 @@
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TokyoNationalMuseum -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TokyoNationalMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CulturalHistoricalTouristDestination"/>
         <isNearTo rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#UenoStation"/>
         <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1700</closeTime>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</hasRating>
