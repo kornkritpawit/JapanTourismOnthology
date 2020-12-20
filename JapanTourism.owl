@@ -572,10 +572,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ChouoCity">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#District"/>
-        <hasStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation"/>
-        <hasStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaStation"/>
-        <hasStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HigashiginzaStation"/>
-        <hasStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#YurakuchoStation"/>
+        <hasPlace rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation"/>
+        <hasPlace rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaStation"/>
+        <hasPlace rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HigashiginzaStation"/>
+        <hasPlace rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#YurakuchoStation"/>
     </owl:NamedIndividual>
     
 
@@ -650,8 +650,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaItchomeStation">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ChouoCity"/>
-        <isNearRestaurant rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Maruushimeat"/>
-        <isNearTouristDestination rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HiroshimaBrandShop"/>
+        <isNearTo rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HiroshimaBrandShop"/>
         <rdfs:label>GinzaItchomeStation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -815,6 +814,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#KabukizaTheatre">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CulturalHistoricalTouristDestination"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#WatchTraditionalActivity"/>
         <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HigashiginzaStation"/>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</hasRating>
         <isOpen24Hours rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen24Hours>
@@ -883,6 +883,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#MeijiShrine">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CulturalHistoricalTouristDestination"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#PayRespectActivity"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#VisitTempleActivity"/>
     </owl:NamedIndividual>
     
 
@@ -999,6 +1001,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#SensojiTemple">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CulturalHistoricalTouristDestination"/>
         <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#PayRespectActivity"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#VisitTempleActivity"/>
         <isNearTo rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AsakusaStation"/>
         <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1700</closeTime>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</hasRating>
@@ -1145,6 +1148,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TokyoNationalMuseum">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CulturalHistoricalTouristDestination"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#VisitMuseumActivity"/>
         <isNearTo rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#UenoStation"/>
         <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1700</closeTime>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</hasRating>
@@ -1255,6 +1259,14 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#VisitTowerActivity">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationActivity"/>
         <rdfs:label>VisitTowerActivity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#WatchTraditionalActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#WatchTraditionalActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#CulturalHistoricalBasedActivity"/>
     </owl:NamedIndividual>
     
 
