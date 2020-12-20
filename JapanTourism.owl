@@ -516,14 +516,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Region -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Region">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Place"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant">
