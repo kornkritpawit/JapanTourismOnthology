@@ -210,6 +210,7 @@
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isInDistrict -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isInDistrict">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isLocatedIn"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#District"/>
         <rdfs:label>isInDistrict</rdfs:label>
@@ -231,7 +232,7 @@
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isInTrainStationLine -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isInTrainStationLine">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isLocatedIn"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isTrainStationLineOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStationLine"/>
@@ -241,9 +242,7 @@
 
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isLocatedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isLocatedIn">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#isLocatedIn"/>
     
 
 
@@ -1173,6 +1172,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TokyoMetroGinzaLine">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStationLine"/>
+        <hasStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#GinzaStation"/>
+        <hasStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RoppongiStation"/>
+        <hasStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ShiodomeStation"/>
     </owl:NamedIndividual>
     
 
