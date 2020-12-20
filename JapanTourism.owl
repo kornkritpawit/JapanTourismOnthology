@@ -625,7 +625,7 @@
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#DriveKartActivity -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#DriveKartActivity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#RecreationActivity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#AdventureActivity"/>
         <RecommendAtLeastAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</RecommendAtLeastAge>
     </owl:NamedIndividual>
     
