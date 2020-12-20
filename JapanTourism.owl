@@ -639,11 +639,14 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ChouoCity"/>
     </owl:NamedIndividual>
+    
+
 
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HamarikyuGardens -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#HamarikyuGardens">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#EnvironmentalTouristDestination"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#VisitGardenActivity"/>
         <isNearStation rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ShiodomeStation"/>
         <closeTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1700</closeTime>
         <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</hasRating>
@@ -738,6 +741,8 @@
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ToshimaCity"/>
         <rdfs:label>IkebukuroStation</rdfs:label>
     </owl:NamedIndividual>
+    
+
 
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ItoyaStationaryStore -->
 
@@ -764,6 +769,8 @@
         <isOpen24Hours rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen24Hours>
         <openTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1800</openTime>
     </owl:NamedIndividual>
+    
+
 
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#KabukizaTheatre -->
 
@@ -1005,6 +1012,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#TrainStation"/>
         <isInDistrict rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ShibuyaCity"/>
     </owl:NamedIndividual>
+    
+
 
     <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ShiodomeStation -->
 
@@ -1024,6 +1033,10 @@
         <isActivityOf rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#ShibuyaCrossing"/>
         <rdfs:label>ShoppingActivity</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#SukiyabashiJiro -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#SukiyabashiJiro">
         <rdf:type rdf:resource="http://www.semanticweb.org/korn/ontologies/2563/9/JapanTourism#Restaurant"/>
